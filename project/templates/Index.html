@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBn+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg">
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 pl-5 pr-5">
+            <a href="#" class="logo">A V S</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0" action="/search" method="post">
+                            <input class="form-control mr-sm-2  ml-2" type="search" name="search_query" placeholder="Search for products">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="apps">
+            <div class="sm-box p-3 pg-hom-apps" >
+                <div class="sm-cats round icon-s">
+                    <div class="app-card">
+                    <a href="https://l.smartprix.com/l?k=125E-tyPD8dptNBCCpphrhArnrysuhyiarTFhrhrhrhrhrhr&amp;click_src=integrated-apps-home&amp;in_browser=1" rel="nofollow noopener" data-way="">
+                        <img loading="lazy" width="50" height="50" class="sm-img" src="https://cdn1.smartprix.com/rx-iR2NxBi82-w100-h100/R2NxBi82.webp" alt="Amazon"><span class="app-name">Amazon</span></a>
+                    </div>
+                    <div class="app-card">
+                        <a href="https://l.smartprix.com/l?k=125rgA_4NCVS7z.xqvlhrhAgTYBOr3Uh7hrjui3sYihoPjBBhrhrhrhrhr&amp;click_src=integrated-apps-home&amp;in_browser=1" rel="nofollow noopener" data-way="">
+                            <img loading="lazy" width="50" height="50" class="sm-img" src="https://cdn1.smartprix.com/rx-i1jV84HS1-w100-h100/1jV84HS1.webp" alt="Flipkart"><span class="app-name">Flipkart</span></a>
+                    </div>
+                    <div class="app-card">
+                            <a href="https://l.smartprix.com/l?k=12-rON~72~CJt_yBePahrhiA3snrh7hrjui3sYihoPjBBhrhrhrhrhr&amp;click_src=integrated-apps-home&amp;in_browser=1" rel="nofollow noopener" data-way="">
+                            <img loading="lazy" width="50" height="50" class="sm-img" src="https://cdn1.smartprix.com/rx-i4vfi1umq-w100-h100/4vfi1umq.webp" alt="Croma"><span class="app-name">Croma</span></a>
+                    </div>
+                    <div class="app-card">
+                            <a href="https://l.smartprix.com/l?k=12HblQArW7OCi5zzjW3thrhAFrnFCuWh7Yuh-hrjui3sYihoPjBBhrhrhrhrhr&amp;click_src=integrated-apps-home&amp;in_browser=1" rel="nofollow noopener" data-way="">
+                            <img loading="lazy" width="50" height="50" class="sm-img" src="https://cdn1.smartprix.com/rx-ircJXXuPY-w100-h100/rcJXXuPY.webp" alt="Samsung"><span class="app-name">Samsung</span></a>
+                    </div>
+                    <div class="app-card">
+                            <a href="https://l.smartprix.com/l?k=12HHr-iEsP6Piuq7lZWxhrhinIuU3rh7hrjui3sYihoPjBBhrhrhrhrhr&amp;click_src=integrated-apps-home&amp;in_browser=1" rel="nofollow noopener" data-way="">
+                            <img loading="lazy" width="50" height="50" class="sm-img" src="https://cdn1.smartprix.com/rx-is3m58Ie0-w100-h100/s3m58Ie0.webp" alt="Myntra"><span class="app-name">Myntra</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="letshop">
+            <img src="https://st4.depositphotos.com/4678277/40811/i/450/depositphotos_408110334-stock-photo-full-length-body-size-view.jpg"  style="max-width: 600px; height: 234px; margin: 0px; width: 351px;" alt="Shopping Stock Photos, Royalty Free Shopping Images ..." aria-hidden="false">
+           <div class="d">
+            <h2 style="font-size:45px;color:#ffffff" class="ml-3">Let's go...</h2>
+            </div>
+            <div class="cartimg ml-auto">
+                <img src="https://cdn.exchangewire.com/wp-content/uploads/2022/03/black-friday-elements-assortment-scaled.jpg"  style="max-width: 2560px; height: 234px; margin: 1px 0px; width: 351px;" alt="The Untapped Opportunity of Retail Media - ExchangeWire.com" aria-hidden="false">
+            </div>
+        </div>
+        <section class="items-comparing mt-5 mb-5">
+            <div class="items-list">
+                <div class="category-container laptops">
+                    <a href="{{ url_for('category', category_name='laptops') }}"></a>
+                    <img src="https://www.freeiconspng.com/uploads/laptop-icon-24.png" alt="Category Image">
+                    <a href="{{ url_for('category', category_name='laptops') }}">laptops</a>
+                </div>
+                <div class="category-container mobiles">
+                    <img src="https://icon-library.com/images/handphone-icon/handphone-icon-11.jpg" alt="Category Image">
+                    <a href="{{ url_for('category', category_name='mobiles') }}">mobiles and related appliances</a>
+                </div>
+                <div class="category-container watches">
+                    <img src="https://cdn3.iconfinder.com/data/icons/camping-462/64/wristwatch-time-watch-timer-clock-watches-512.png" alt="Category Image">
+                    <a href="{{ url_for('category', category_name='Watches') }}">watches and smart watches</a>
+                </div>
+                <div class="category-container cameras">
+                    <a href="{{ url_for('category', category_name='camera') }}"></a>
+                    <img src="https://th.bing.com/th/id/R.57e6c06ef566d9faefd4ccc4ada864c1?rik=veRJ0IaD8bEOug&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon-bw%2fcamera-icon-png-9.png&ehk=tRU8XAAljfqdw9DJj%2b4JT0jfDcVOlFF7fgauctZbqEY%3d&risl=&pid=ImgRaw&r=0" alt="Category Image">
+                    <a href="{{ url_for('category', category_name='Watches') }}">camera and related appliances</a>
+                </div>
+                <div class="category-container microphones">
+                    <a href="{{ url_for('category', category_name='speakers') }}"></a>
+                    <img src="https://cdn0.iconfinder.com/data/icons/internet-of-things-22/64/speaker-audio-bluetooth-music-wireless-512.png" alt="Category Image">
+                    <a href="{{ url_for('category', category_name='Watches') }}">Microphones and speakers</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resultscontainer">
+            <div class="container-fluid results-container mt-4">
+                <div class="row">
+                    {% if search_results %}
+                        {% for product in search_results %}
+                            <div class="col-12 col-md-3">
+                                <div class="product-card">
+                                    <img src="{{ product['image_url'] }}" class="card-img-top" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ product['product_name'] }}</h5>
+                                        <p class="card-text">Price: <span class="card-price">${{ product['actual_price'] }}</span></p>
+                                        <p class="card-text">Rating: {{ product['ratings'] }}</p>
+                                        <p class="card-text">Vendor: {{ product['vendor_name'] }}</p>
+                                        <a href="{{ product['product_link'] }}" class="btn btn-primary">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pagination">
+                            {{ pagination.links }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <div class="company-info">
+            <div class="company-logo text-center">
+                <a href="#" class="logo">A V S</a>
+            </div>
+            <div class="about-us text-center m-5">
+                <h3>About Us</h3>
+                <p>
+                    "Your destination for comparing prices on the latest smart gadgets. Simplifying shopping decisions, one click at a time."</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="whychooseus m-5">
+                <h3>Why to Choose Us</h3>
+                <p>" Lost Time is Never Found Again "</p>
+                <p>😊 We are here to save your precious time</p>
+            </div>
+            <div class="categories m-5">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Laptops</li>
+                    <li>Mobiles</li>
+                    <li>Watches</li>
+                    <li>Cameras</li>
+                    <li>smart Gadgets</li>
+                    <!-- Add more categories as needed -->
+                </ul>
+            </div>
+            <div class="social-media m-5">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://www.whitemad.pl/wp-content/uploads/2023/07/nowe-logo-twitter-1536x1536.jpeg" alt="Twitter"></a>
+                    <a href="#"><img src="https://www.pngkey.com/png/full/792-7927620_instagram-vector-png-instagram-logo-png-free-download.png" alt="Instagram"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Bootstrap JS and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
